@@ -5,7 +5,7 @@
 ## Kaynakça 
 Bu döküman oluşturulurken [**Dumindu Madunuwan**](https://github.com/dumindu)'ın [Learning Rust](https://github.com/learning-rust/site) adlı çalışması baz alınmış, içeriğin güncel olarak korunabilmesi için  [The Rust Programming Language](https://doc.rust-lang.org/book/) ve [Rust By Example](https://doc.rust-lang.org/rust-by-example/) belgelerinden faydalanılmıştır. Rust programlama dilini Türkçe okuyarak öğrenmek isteyecekler için iyi bir başlangıç olacağına inandığımız bu döküman Rust programlama dilinin daha çok kişi tarafından öğrenilmesini kolaylaştırmak amacıyla hazırlandığından [Creative Commons Atıf-GayriTicari 4.0 Uluslararası Kamu Lisans](https://github.com/RustDili/dokuman/blob/master/ceviriler/LICENSE-CC.md) hükümleriyle Lisanslanmış olup **Ticari bir amaçla basılıp kopyalanamaz ve dağıtılamaz.**
 
-Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cümle bozuklukları gibi kusurların düzeltilebilmesi için önerilerinizi [Buradan iletebilirsiniz](https://github.com/RustDili/Rust-Mulkiyet-Kavrami/issues)   
+Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cümle bozuklukları gibi kusurların düzeltilebilmesi için önerilerinizi [Buradan iletebilirsiniz](https://github.com/RustDili/Rust-Ogrenmek/issues)   
 
 
 # Rust'ı Öğrenmek

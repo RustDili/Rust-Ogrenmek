@@ -1,4 +1,4 @@
-![Kapak Resmi](https://github.com/rust-lang-tr/dokuman/blob/master/resimler/Rust-ogrenmek.jpg)
+![Kapak Resmi](https://github.com/RustDili/Rust-Ogrenmek/blob/master/resimler/Rust-ogrenmek.jpg)
 
 ## Kaynakça 
 

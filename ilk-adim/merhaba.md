@@ -17,7 +17,7 @@ fn main() {
 ### Rust Playground
 Rust kodlarınızı internet üzerinde [çevrim içi](https://play.rust-lang.org/) çalıştırabileceğiniz bir alandır.
 
-![Playground](https://github.com/rust-lang-tr/dokuman/blob/master/resimler/Rust-Playground.png)
+![Playground](https://github.com/RustDili/Rust-Ogrenmek/blob/master/resimler/Rust-Playground.png)
 
 ### Println! Kullanımı
 💯Bir makro olarak kullanılan `println!` için farklı kullanım örneklerine göz atalım.

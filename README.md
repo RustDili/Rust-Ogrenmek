@@ -15,7 +15,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Merhaba dünya!](ilk-adim/merhaba.md)
 * [Paket yönetimi, Sandıklar ve Proje Yapısı](ilk-adim/cargo.md)
 * [Yorum satırları ve kodun belgelenmesi](ilk-adim/yorum-ve-belge.md)
-* [Değişken bağlamı, sabit ve statik öğeler](ilk-adim/baglam-sabit-statik.md)
+* [Değişkenler, sabitler ve statik öğeler](ilk-adim/baglam-sabit-statik.md)
 * [İşlevler](ilk-adim/islev.md)
 * [Basit veri türleri](ilk-adim/ilkeller.md)
 * [İşleçler](ilk-adim/operatorler.md)

@@ -106,7 +106,7 @@ fn main() {
 ````
 
 ### vi. f32 ve f64
-32 ve 64 bit boyutlarında kesirli sayıları tutabilen türlerdir. Rust, kesirli sayıları ifade ederken **IEEE** standartlarına uyar. Bu nedenle `f32` türü, diğer dillerdeki tek duyarlıklı float türüne benzerken, `f64` çift duyarlıklı double türüne benzer.
+32 ve 64 bit boyutlarında kayar noktalı sayıları tutabilen türlerdir. Rust, kayar noktalı sayıları ifade ederken **IEEE** standartlarına uyar. Bu nedenle `f32` türü, diğer dillerdeki tek duyarlıklı float türüne benzerken, `f64` çift duyarlıklı double türüne benzer.
 Hedeflenen donanım çift hassasiyeti desteklemiyorsa yahut tek hassasiyetli türün çift hassasiyetli türden daha hızlı olabileceği durumlarda `f32`, diğer durumlarda daima `f64` kullanılması tavsiye edilir. Rust' ta aksi belirtilmedikçe tamsayılar için `i32`, kayan noktalı sayılar için `f64` türlerinin kullanılacağını varsayılır. 
 
 ⭐️ Her ne kadar derleme anında türler çıkarsanıyor olsalar da, eğer varsayılan türler haricinde bir tür kullanılmak isteniyorsa, bu türün açıkça bildirilmesi gerekir.

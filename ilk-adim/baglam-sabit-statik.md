@@ -10,19 +10,19 @@ Değişken ifade edilirken bağlayıcı olarak genellikle `let` anahtar sözcü�
 ```Rust
 fn main() {
   let a = true; 
-  println!("a değişmezi: {}", a);
+  println!("a: {}", a);
   
   let b: bool = false; 
-  println!("b değişmezi: {}", b);
+  println!("b: {}", b);
   
   let (x, y) = (1, 5); 
   println!("x: {}, y: {}", x, y);
   
   let mut z = 5; 
-  println!("z değişkeni: {}", z);
+  println!("z: {}", z);
   
   z = 6;
-  println!("z değişimi: {}", b);
+  println!("Şimdiki z: {}", b);
 }
 ````
 

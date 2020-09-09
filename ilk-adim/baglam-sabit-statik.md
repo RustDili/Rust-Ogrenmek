@@ -23,6 +23,13 @@ fn main() {
   
   z = 6;
   println!("Şimdiki z: {}", b);
+  
+  let (mut e, mut f) = (-12, 20.1);
+  println!("e: {}, f: {}", e, f);
+  
+  e = 9;
+  f = 9.9;
+  println!("Yeni e: {}, yeni f: {}", e, f);
 }
 ````
 

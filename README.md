@@ -17,7 +17,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Yorum satırları ve kodun belgelenmesi](ilk-adim/yorum-ve-belge.md)
 * [Değişkenler, sabitler ve statik öğeler](ilk-adim/baglam-sabit-statik.md)
 * [İşlevler](ilk-adim/islev.md)
-* [Basit veri türleri](ilk-adim/ilkeller.md)
+* [Temel veri türleri](ilk-adim/ilkeller.md)
 * [İşleçler](ilk-adim/operatorler.md)
 * [Kontrol akışı](ilk-adim/kontrol-akisi.md)
 ## İleri Aşama

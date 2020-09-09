@@ -260,7 +260,7 @@ fn main() {
 // Dizginin ilk parçası: Merhaba
 // Dizginin son parçası: dünya!
 ````
-⭐️ Hafızanın herhangi bir yerinde saklanan ve boyutu belirsiz bir UTF-8 kod noktası koleksiyonunu tutan statik ve değişmez olarak tahsis edilmiş bir dizgi parçasıdır. Dizgiler ödünç verilirken **`&str`** şeklinde kullanılırlar.
+⭐️ Hafızanın herhangi bir yerinde saklanan ve boyutu belirsiz bir UTF-8 kod noktası koleksiyonunu tutan statik ve değişmez olarak tahsis edilmiş bir dizgi parçasıdır. Dizgiler ödünç verilirlerken **`&str`** biçiminde iletilirler.
 
 ## Sonraki konuya geçmeden önce...
 - Değişken tanımlarında yapılan tür bildirimlerinin dışında, tamsayılar için veri türü doğrudan sonek olarak değere eklenebilir. Bunun yanında, uzun sayıların okunabilirliğini artırmak amacıyla basamaklar arasında **`_`** karakterini bölücü olarak kullanabiliriz. Bölücünün kullanımı esnek olup istenilen basamakların arası tıpku bu sayıda olduğu gibi `10000_0000` istenildiği şekilde bölünebilir.

@@ -46,6 +46,7 @@ x += x; y += y; z += z;
 println!("x:{}, y:{}, z:{}", x, y, z); // x:2, y:10, z:20
 ````
 ### Sabitler
+
 Sabitleri tanımlamak için `const` anahtar sözcüğü kullanılır. Değişkenlerin aksine sabitler tür açıklaması yapılarak bildirilir. 
 Programın ömrü boyunca yaşayan bu değişken türleri derleme sırasında değerleriyle değiştirildiğinden bellekte kalıcı adresleri bulunmaz. Bu nedenle aynı sabite yapılan farklı başvuruların aynı hafıza adresine erişeceği garanti edilmez.
 
@@ -55,8 +56,10 @@ fn main() {
   println!("S sabitinin değeri: {}," S);
 }
 ````
-Sabitler sadece varsayılan olarak değil her zaman değişmez olduklarından `mut` anahtar kelimesini sabit bildirimlerinde kullanamazsınız.
+Sabitler sadece varsayılan olarak değil her zaman değişmez olduklarından, sabit bildirimlerinde `mut` anahtar kelimesi kullanılamaz.
+
 ### Statikler
+
 Bir küresel değişken türü tanımımlanırken `static` anahtar sözcüğü kullanılır. Bu türler sabitlere benzemekle birlikte sabit bir adresleri bulunur. Bu türlerin her değeri için sadece bir örnek olabilir ve bu örnekler kullanılırken satır içlerine alınmazlar.
 
 ```Rust

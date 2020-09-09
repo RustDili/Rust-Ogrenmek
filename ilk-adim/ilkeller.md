@@ -263,7 +263,7 @@ fn main() {
 ⭐️ Hafızanın herhangi bir yerinde saklanan ve boyutu belirsiz bir UTF-8 kod noktası koleksiyonunu tutan statik ve değişmez olarak tahsis edilmiş bir dizgi parçasıdır. Dizgiler ödünç verilirlerken **`&str`** biçiminde iletilirler.
 
 ## Sonraki konuya geçmeden önce...
-- Değişken tanımlarında yapılan tür bildirimlerinin dışında, tamsayılar için veri türü doğrudan sonek olarak değere eklenebilir. Bunun yanında, uzun sayıların okunabilirliğini artırmak amacıyla basamaklar arasında **`_`** karakterini bölücü olarak kullanabiliriz. Bölücünün kullanımı esnek olup istenilen basamakların arası tıpku bu sayıda olduğu gibi `10000_0000` istenildiği şekilde bölünebilir.
+- Değişken tanımlarında yapılan tür bildirimlerinin dışında, tamsayılar için veri türü doğrudan son ek olarak değere eklenebilir. Bunun yanında, uzun sayıların okunabilirliğini artırmak amacıyla basamaklar arasında **`_`** karakterini ayrıştırıcı olarak kullanabiliriz. Ayrıştırıcı kullanımı bu sayıda olduğu gibi `10000_0000` esnek olup istenilen basamakların arasını, dilediğiniz biçimde bölebilirsiniz.
 
 ```Rust
 fn main() {
@@ -274,7 +274,7 @@ fn main() {
     let b = 100_000_000; 
 }
 ````
-- Dizge olarak Türkçeleştirdiğimiz [`String`](https://doc.rust-lang.org/std/string/struct.String.html), kendisine belleğin heap adlı bölgesinde yer ayrılan bir türdür. Bu nedenle dizgilerin  boyutları genişlemeye müsait olup UTF-8 standartlarında oldukları garanti edilir. Genellikle bir dizginin mülkiyetine ihtiyaç duyulduğunda dizginin kendisi, bir dizgiyi ödünç almak gerektiğinde ise `&str` ile dizginin referansı kullanılır.
+- Dizge olarak Türkçeleştirdiğimiz [`String`](https://doc.rust-lang.org/std/string/struct.String.html), kendisine belleğin heap adlı bölgesinde yer ayrılan bir türdür. Bu nedenle dizgelerin boyutları genişlemeye müsait olup UTF-8 standartlarında oldukları garanti edilir. Genellikle bir dizgenin mülkiyetine ihtiyaç duyulduğunda dizgenin kendisi, bir dizgiyi ödünç almak gerektiğinde ise `&str` ile dizgenin referansı kullanılır.
 
 - Bir [String](https://doc.rust-lang.org/std/string/struct.String.html) türü, `&str` türünden, [`to_string()`](https://doc.rust-lang.org/std/string/trait.ToString.html) veya [`String::from()`](https://doc.rust-lang.org/std/string/struct.String.html#method.from) metodları kullanılarak oluşturulabilir. Benzer şekilde bir `String` türü de [`as_str()`](https://doc.rust-lang.org/std/string/struct.String.html#method.as_str) metodu yardımıyla, `&str` türüne dönüştürülebilir.
 

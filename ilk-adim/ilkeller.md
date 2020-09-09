@@ -1,5 +1,5 @@
-# Basit veri türleri
-Rust çok sayıda basit veri türüne erişim sağlar.
+# Temel Veri Türleri
+Rust çok sayıda temel veri türüne erişim sağlar.
 
 ### i. Boolean
 **bool:** yalnızca `true` ya da `false` olabilecek bir değeri temsil eden mantıksal veri türüdür. 

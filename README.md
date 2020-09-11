@@ -23,7 +23,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 ## İleri Aşama
 * [Vektörler](ikinci-adim/vectors.md)
 * [Yapılar](ikinci-adim/yapilar.md)
-* [Enum türü](ikinci-adim/enum.md)
+* [Numaralandırmalar](ikinci-adim/enum.md)
 * [Genellemeler](ikinci-adim/jenerikler.md)
 * [Uygulamalar ve Özellikler](ikinci-adim/impl-and-traits.md)
 ## Büyük Bir Adım

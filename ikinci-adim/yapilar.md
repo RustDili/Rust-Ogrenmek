@@ -9,7 +9,7 @@ Birbiriyle ilgili özellikleri bileşik veri tipi halinde bir araya getiren, kul
     - Virgülle ayrılmış bir veya daha fazla eleman
     - Çokuzlu koleksiyonları gibi parantez ile sarmalanmış öğe listesi
     - İsimlendirilmiş çokuzlu şeklinde kullanım kolaylığı
-3. **Birim yapıları**
+3. **Birim benzeri yapılar**
     - Hiç bir üyeye sahip değil
     - Boş bir çokuzluya benzer biçimde **`()`** yeni tür tanımlama
     - Nadiren tercih edilse de, jenerik türlerde oldukça kullanışlı
@@ -209,8 +209,8 @@ Kurallı yapılarda olduğu gibi çokuzlu yapılarının da örnekleri `let` ile
     // Destructure siyah = 0, 0, 0
 ````
 
-## Birim yapıları
-Herhangi bir üyeye sahip olmayan bu yapı türü boş bir çokuzluya benzer. Sıfır baytlık boyuta sahip olduklarından genellikle marker olarak veya Jenerik türler oluştururken faydalıdırlar. İçlerinde saklanacak veri bulundurmadıklarından genellikle uygulamalara özellikler eklemek için de tercih edilirler:
+## Birim benzeri yapılar
+Herhangi bir üyeye sahip olmayan bu yapı türü boş bir çokuzluya benzer. Sıfır byte'lık boyuta sahip olduklarından genellikle marker olarak veya jenerik türler oluştururken faydalıdırlar. İçlerinde saklanacak veri bulundurmadıklarından genellikle uygulamalara özellikler eklemek için de tercih edilirler:
 
 ```Rust
 struct Mesafe;

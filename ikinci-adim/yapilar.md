@@ -5,7 +5,7 @@ Birbiriyle ilgili özellikleri bileşik veri tipi halinde bir araya getiren, kul
     - Süslü parantez ile sarmalanmış öğe listesi
     - Nesne yönelimli programlama dillerindeki sınıflarla benzerlik
     - İsimlendirilmiş alanlardan oluştuklarından, nokta gösterimi ile erişim
-2. **Çokuzlu yapıları**
+2. **Çokuzlu benzeri yapılar**
     - Virgülle ayrılmış bir veya daha fazla eleman
     - Çokuzlu koleksiyonları gibi parantez ile sarmalanmış öğe listesi
     - İsimlendirilmiş çokuzlu şeklinde kullanım kolaylığı
@@ -158,13 +158,13 @@ işlev yoluyla oluşturulan örnekler destructure edilebildiğinden, üyelerine 
     // Lacivert (25, 25, 112)
 ````
 
-## Çokuzlu yapıları
+## Çokuzlu benzeri yapılar
 Normal yapılara benzemekle beraber isimlendirilmiş alanlar yerine `struct Tuple(u32, String);` söz diziminde olduğu gibi üyelerinin türleri bildirilir. Çokuzlular gibi kullanılan bu türün üyelerine `0`' dan başlayan dizin değerleri ile ulaşılır.
 
-⭐️ Çokuzlu yapılarında yalnızca bir öğe bulunduğunda, buna newtype örneği denir ve bu örnek yeni bir tür oluşturmaya yardımcı olur:
+⭐️ Çokuzlu yapılarında yalnızca bir öğe bulunduğunda, buna *newtype* örneği denir ve bu örnek yeni bir tür oluşturmaya yardımcı olur:
 
 ```Rust
-sstruct Renk(u8, u8, u8);
+struct Renk(u8, u8, u8);
 struct Mesafe(i32);
 
 fn main() {

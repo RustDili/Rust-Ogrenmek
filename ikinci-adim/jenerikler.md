@@ -1,10 +1,10 @@
-# Genellemeler
+# Jenerik Türler
 
-> 📖 Bir veri türü yahut bir işlev tanımlanırken bunların farklı türlerle de çalışmasını isteriz. Rust' ta bunu **genellemeler** ile yapabiliriz. Farklı veri türleri için kullanılmak üzere tasarlanmış ve tek noktada toplanmış olan bir program parçası aynı işi diğer türler için de yapacak olan kodun tekrar tekrar yazılmasını önler. Farklı veri türleri için  genelleştirilmiş olan algoritmanın, her veri türü için tekrar üretilmesi gerekmeyeceğinden, programın kod tasarımı sadeleşmiş, geliştirme hızı da artmış olur. 
+> 📖 Bir veri türü yahut bir işlev tanımlanırken bunların farklı türlerle de çalışmasını isteriz. Rust' ta bunu **jenerikler** ile yapabiliriz. Farklı veri türleri için kullanılmak üzere tasarlanmış ve tek noktada toplanmış olan bir program parçası aynı işi diğer türler için de yapacak olan kodun tekrar tekrar yazılmasını önler. Farklı veri türleri için  genelleştirilmiş olan algoritmanın, her veri türü için tekrar üretilmesi gerekmeyeceğinden, programın kod tasarımı sadeleşmiş, geliştirme hızı da artmış olur. 
 
-💭 Genelleme kavramında özel bir veri türünü `(x: u8)` şeklinde bildirmek yerine türün yerine geçebilen `(x: T )` şeklinde genel bir belirteç kullanılır. Ancak genel türün derleyici tarafından anlaşılabilmesi için `<T>` şeklinde tanımlanarak bildirilmesi gerekmektedir.
+💭 Jenerik kavramında özel bir veri türünü `(x: u8)` şeklinde bildirmek yerine türün yerine geçebilen `(x: T )` şeklinde genel bir belirteç kullanılır. Ancak jenerik türün derleyici tarafından anlaşılabilmesi için `<T>` şeklinde tanımlanarak bildirilmesi gerekmektedir.
 
-### Genellenmiş işlevler
+### Jenerik işlevler
 Aynı işlevin farklı türlerle kullanılabiliyor olması kodun gereksizce uzamasını önleyerek daha esnek olmasını sağlar:
 
 ```Rust
@@ -42,7 +42,7 @@ Bir verinin hangi tür olduğunu öğrenebilmek için `std::any` kütüphanesind
 
 ```Rust
 fn her_ture_uygun<T>(_: T)  {
-    // x parametresi Genelleştirilmiş T türündedir.
+    // x parametresi T türündedir.
     println!("{} türünde veri", std::any::type_name::<T>());
 }
 
@@ -56,8 +56,8 @@ fn main() {
 }
 ````
 
-### Genellenmiş yapılar
-Genellenmiş tür parametrelerinin yapı alanlarında kullanılabilmesi için tanımlarında `<T>` söz diziminin kullanılması gereklidir. Herhangi bir türden oluşan `x` ve `y` kordinatlarını tutan `Nokta<T>` yapısı aşağıda örneklenmiştir:
+### Jenerik yapılar
+Jenerik tür parametrelerinin yapı alanlarında kullanılabilmesi için tanımlarında `<T>` söz diziminin kullanılması gereklidir. Herhangi bir türden oluşan `x` ve `y` kordinatlarını tutan `Nokta<T>` yapısı aşağıda örneklenmiştir:
 
 ```Rust
 struct Nokta<T> {
@@ -73,7 +73,7 @@ fn main() {
     println!("Nokta: ({}, {})", kesirli.x, kesirli.y);  // Nokta: (3.2, 2.5)
 }
 ````
-Genellenmiş işlevlerde olduğu gibi; yapı tanımında bildirilen tür parametresi `<T>`' nin bir kez kullanılması, yapının tüm alanlarının aynı türden oluşacağını gösterir. `let tamsayi = Nokta{x: 5, y: 10.7};` şeklinde oluşturulan bir yapı örneği bu programın hata üretmesine sebep olacaktır. 
+Jenerik işlevlerde olduğu gibi; yapı tanımında bildirilen tür parametresi `<T>`' nin bir kez kullanılması, yapının tüm alanlarının aynı türden oluşacağını gösterir. `let tamsayi = Nokta{x: 5, y: 10.7};` şeklinde oluşturulan bir yapı örneği bu programın hata üretmesine sebep olacaktır. 
 
 Farklı türden alanlara sahip bir yapıya ihtiyaç duyulduğunda, bu türlerin yapı tanımında bildirilmesi yeterlidir. Ancak yapı tanımında çok sayıda tür parametresinin kullanılması kodun okunmasını zorlaştırır. Bir yapı tanımında çok sayıda genel türe ihtiyaç duyuluyorsa belki de kodun küçük parçalar halinde yeniden tasarlanması fikri üzerinde düşünülmelidir:
 
@@ -95,7 +95,7 @@ fn main() {
 }
 ````
 
-Genellenmiş yapılar için uygulama eklenirken tür parametreleri `impl` anahtar kelimesinden sonra belirtilmelidir:
+Jenerik yapılar için uygulama eklenirken tür parametreleri `impl` anahtar kelimesinden sonra belirtilmelidir:
 
 ```Rust
 struct Nokta<T, U> {
@@ -129,8 +129,8 @@ fn main() {
     println!("Nokta: ({}, {})", donustur.x, donustur.y);// Nokta: (5, p)
 }
 ````
-### Genellenmiş enum
-Yapılarda olduğu gibi, genellenmiş veri türlerini varyantlarında tutabilen `enum` türlerinden de yararlanabiliriz. Rust standart kitaplığında daha önceden tanımlanmış özel türlerden `Option<T>` ve `Result<T>` türleri bu konuya oldukça iyi birer örnektir:
+### Jenerik enum
+Yapılarda olduğu gibi, jenerik veri türlerini varyantlarında tutabilen `enum` türlerinden de yararlanabiliriz. Rust standart kitaplığında daha önceden tanımlanmış özel türlerden `Option<T>` ve `Result<T>` türleri bu konuya oldukça iyi birer örnektir:
 
 ```Rust
 enum Option<T> {
@@ -191,7 +191,7 @@ fn main() {
 // Üye numarası: 3
 ````
 
-Duruma göre ya başarılı `Ok` ya da başarısız `Err` değer döndüren Result<T, E> ise iki genel türden oluşur: 
+Duruma göre ya başarılı `Ok` ya da başarısız `Err` değer döndüren Result<T, E> ise iki jenerik türden oluşur: 
 
 ```Rust
 enum Result<T, E> { 

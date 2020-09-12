@@ -24,7 +24,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Vektörler](ikinci-adim/vectors.md)
 * [Yapılar](ikinci-adim/yapilar.md)
 * [Numaralandırmalar](ikinci-adim/enum.md)
-* [Genellemeler](ikinci-adim/jenerikler.md)
+* [Jenerik Türler](ikinci-adim/jenerikler.md)
 * [Uygulamalar ve Özellikler](ikinci-adim/impl-and-traits.md)
 ## Büyük Bir Adım
 * [Sahiplik ve Mülkiyet kavramı](ucuncu-adim/ownership.md)

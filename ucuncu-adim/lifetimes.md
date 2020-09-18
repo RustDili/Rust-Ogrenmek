@@ -1,9 +1,9 @@
 # Yaşam süresi
-Referanslarla çalışırken onları kullanmayı bırakana kadar referans verisinin canlı kaldığından emin olmalıyız. 
+Referanslarla çalışırken sonlandırılacakları ana kadar referans kaynağının var olduğundan emin olmamız gerekir. 
 
 Şöyle ki; 
-  - Bir değerle bağladığımız 'a' adında bir değişkenimiz var.
-  - Bu `a` değişkenini `x` adındaki başka bir değişkene referans toluyla bağladığımız takdirde `x` değişkeniyle işimiz bitene kadar `a` değişkeninin yaşadığından emin olmamız gerekir. 
+  - Bir kaynağa sahip olan 'a' adında bir değişkenimiz olduğunu düşünelim.
+  - Bu `a` değişkenini, `x` adındaki başka bir değişkene referans yoluyla bağladığımızda, `x` değişkeniyle işimiz bitene kadar `a` değişkeninin yaşadığından emin olmamız gerekir. 
   
 >🔎 Bellek yönetimi, bilgisayar belleğine uygulanan bir kaynak yönetimi şeklidir. Programlama dillerinin çoğu 1990'ların ortasına kadar, programcının kullanılmayan nesneleri tanımlamak veya serbest bırakabilmesi için talimatlar vermesini gerektiren **Elle Bellek Yönetimi**'ni kullanıyordu. 1959'da John McCarthy, bir **Otomatik Bellek Yönetimi** (AMM) şekli olan **Çöp Toplayıcı** sistemini *(GC)* icat etti. Bu sistem programlayıcıya güvenmek yerine hangi belleğin artık kullanılmayacağını belirler ve o belleği otomatik olarak serbest bırakır. **Objective-C ve Swift** dilleri de, **Otomatik Referans Sayma** (ARC) adı verilen benzer bir işilevsellik sunarlar.
 

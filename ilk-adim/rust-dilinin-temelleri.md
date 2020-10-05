@@ -22,6 +22,6 @@ Rust'ın tasarım öğeleri çok çeşitli kaynaklardan gelmektedir:
 * Tür Sınıfları: **Haskell**
 * Sandık:**Assembly in the ECMA-335 CLI model**
 * Kanallar ve Eşzamanlılık: **Newsqueak, Alef, Limbo**
-* Mesaj iletme ve işlik hatası: **Erlang**
+* Mesaj iletme ve iş parçacığı hatası: **Erlang**
 v.b. 
 Varsayılan olarak Rust'ta otomatik çöp toplama sistemi **(GC)** bulunmaz. Bunun yerine Rust derleyicisi kodu derleme zamanında gözlemleyerek ve C, C++ gibi programlama dillerinde yapılabilecek birçok hata türünün önlenmesine yardımcı olur.

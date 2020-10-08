@@ -7,7 +7,7 @@ Rust, eşzamanlı, güvenli ve yüksek performanslı sistemler oluşturulabilen 
 > "Rust üç hedefe odaklanan bir sistem programlama dilidir: güvenlik, hız ve eşzamanlılık."  
 > \_\_ Rust Dökümanından
 
-Rust, arka uçta [LLVM](https://en.wikipedia.org/wiki/LLVM) kullanan çok genç ve modern bir derlemeli programlama dili olmasının yanı sıra; emir kipli prosedürel, eşzamanlı, nesne yönelimli ve saf işlev biçimlerini destekleyen birden fazla programlama paradigmasına sahip bir programlama dilidir. Ayrıca, hem statik hem de dinamik tarzlarda jenerik programlama ve metaprogramlamayı destekler.    
+Rust, arka uçta [LLVM](https://en.wikipedia.org/wiki/LLVM) kullanan genç ve modern bir derlemeli programlama dili olmasına rağmen, emir kipli prosedürel, eşzamanlı, nesne yönelimli ve saf işlev biçimlerini destekleyen programlama paradigmalarını barındıran bir programlama dilidir. Bunun yanı sıra, hem statik hem de dinamik tarzlarda türden bağımsız programlama ve metaprogramlamayı destekler.    
 
 > 🔎 Rust’un en eşsiz ve çekici özelliklerinden biri de bellek güvenliğini sağlamak için kullanılan [**Mülkiyet Kavramı**](https://github.com/rust-lang-tr/site/blob/master/source/docs/c1.ownership.html)dır. Bunun için Rust eniyileştirilmiş bellek işaretçileri oluşturur ve [**Referanslar ve Borçlanma**](https://github.com/rust-lang-tr/site/blob/master/source/docs/c2.borrowing.html) kullanımı ile derleme zamanında bellek işaretçilerin sınırlı erişimlerini kontrol eder. Ardından değişkenlerin [**Yaşam Süreleri**](https://github.com/rust-lang-tr/site/blob/master/source/docs/c3.lifetimes.html)ni kontrol ederek otomatik derleme zamanı bellek yönetimi yapar.
 ## Etkiler

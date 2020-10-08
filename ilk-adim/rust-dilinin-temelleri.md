@@ -9,7 +9,7 @@ Rust, eşzamanlı, güvenli ve yüksek performanslı sistemler oluşturulabilen 
 
 Rust, arka uçta [LLVM](https://en.wikipedia.org/wiki/LLVM) kullanan genç ve modern bir derlemeli programlama dili olmasına rağmen, emir kipli prosedürel, eşzamanlı, nesne yönelimli ve saf işlev biçimlerini destekleyen programlama paradigmalarını barındıran bir programlama dilidir. Bunun yanı sıra, hem statik hem de dinamik tarzlarda türden bağımsız programlama ve metaprogramlamayı destekler.    
 
-> 🔎 Rust’un en eşsiz ve çekici özelliklerinden biri de bellek güvenliğini sağlamak için kullanılan [**Mülkiyet Kavramı**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami)dır. Bunun için Rust eniyileştirilmiş bellek işaretçileri oluşturur ve [**Referanslar ve Borçlanma**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami/blob/master/referans-ve-borclanma.md) kullanımı ile derleme zamanında bellek işaretçilerin sınırlı erişimlerini kontrol eder. Ardından değişkenlerin [**Yaşam Süreleri**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami/blob/master/yasam-suresi.md)ni kontrol ederek otomatik derleme zamanı bellek yönetimi yapar.
+> 🔎 Rust’un eşsiz ve çekici özelliklerinden biri de bellek güvenliğini sağlamak için kullanılan [**Mülkiyet Kavramı**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami)dır. Bunun için Rust iyileştirilmiş bellek işaretçileri oluşturarak [**Referanslar ve Borçlanma**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami/blob/master/referans-ve-borclanma.md) derleme zamanında bellek işaretçilerin erişim sınırlarını denetler ve ardından değişkenlerin [**Yaşam Süreleri**](https://github.com/RustDili/Rust-Mulkiyet-Kavrami/blob/master/yasam-suresi.md)ni kontrol ederek otomatik derleme zamanı bellek yönetimini gerçekleştirir.
 ## Etkiler
 Rust'ın tasarım öğeleri çok çeşitli kaynaklardan gelmektedir:
 * Soyut Makine Modeli: **C**
@@ -23,5 +23,5 @@ Rust'ın tasarım öğeleri çok çeşitli kaynaklardan gelmektedir:
 * Sandık:**Assembly in the ECMA-335 CLI model**
 * Kanallar ve Eşzamanlılık: **Newsqueak, Alef, Limbo**
 * Mesaj iletme ve iş parçacığı hatası: **Erlang**
-v.b. 
-Varsayılan olarak Rust'ta otomatik çöp toplama sistemi **(GC)** bulunmaz. Bunun yerine Rust derleyicisi kodu derleme zamanında gözlemleyerek ve C, C++ gibi programlama dillerinde yapılabilecek birçok hata türünün önlenmesine yardımcı olur.
+ 
+Rust'ta otomatik çöp toplama sistemi **(GC)** bulunmaz. Bunun yerine Rust derleyicisi kodu derleme zamanında gözlemleyerek ve C, C++ gibi programlama dillerinde yapılabilecek birçok hata türünün önlenmesine yardımcı olur.

@@ -1,6 +1,6 @@
 # Neden Rust?
 ## Rust'ın Tarihi 
-Başlangıçta Rust Mozilla çalışanı **Graydon Hoare** tarafından kişisel bir proje olarak tasarlandı ve geliştirildi. Adını Mozilla'nın 2009 yılında projeye sponsor olmasının ardından 2010 yılında duyurmasına rağmen ilk kararlı sürümü olan **Rust 1.0**, 15 Mayıs 2015'te piyasaya sürüldü.
+Rust Mozilla çalışanı **Graydon Hoare** tarafından kişisel bir proje olarak tasarlandı ve geliştirildi. Adını 2010 yılında Mozilla'nın 2009 yılında projeye sponsor olmasının hemen ardından duyurmasına rağmen ilk kararlı sürümü olan **Rust 1.0**, 15 Mayıs 2015'te piyasaya sürüldü.
 
 ## Başlangıç Hedefleri
 Rust'ın hedefinde, olabildiğince eşzamanlı, güvenli ve yüksek performanslı sistemler oluşturulabilen iyi bir programlama dili olmak vardır.

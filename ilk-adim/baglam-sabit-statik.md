@@ -1,7 +1,7 @@
 # Değişkenler, sabitler ve statik öğeler
 ⭐️ Rust programlama dilinde değişkenler aksi belirtilmediği sürece değişmez olarak kabul edildiğinden, değişken kavramıyla aslında **değişken bağlamı**na işaret edilir. Eğer bu bağlamın değişebilir olması isteniyorsa değişken bildirilirken `mut` anahtar sözcüğünün kullanılması gereklidir.
 
-⭐️ Rust statik olarak tasarlanmış bir dil olduğundan, veri türlerini derleme zamanında kontrol eder. Bu nedenle değişken tanımlarında tür bildirimi zorunlu tutulmaz. Tür bildirilmediğinde derleyici, ifede ve kullanımı kontrol ederek en olası veri türünü belirlemeye çalışır. 
+⭐️ Rust statik olarak tasarlanmış bir dil olduğundan, veri türlerini derleme zamanında kontrol eder. Bu nedenle değişken tanımlarında tür bildirimi zorunlu tutulmaz. Tür bildirilmediğinde derleyici, ifade ve kullanımı kontrol ederek en olası veri türünü belirlemeye çalışır. 
 Bununla birlikte eğer **sabit** ya da **statik** bir bağlam tanımlanıyorsa o bağlamın türü mutlaka bildirilmek zorundadır. Türler `(:)` iki noktanın ardından bildirilir. 
 
 ### Değişken bağlama

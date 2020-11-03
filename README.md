@@ -9,7 +9,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 
 
 # Rust'ı Öğrenmek
-## Temeller
+## Birinci Bölüm
 * [Neden Rust?](ilk-adim/rust-dilinin-temelleri.md)
 * [Kurulum](ilk-adim/kurulum.md)
 * [Merhaba dünya!](ilk-adim/merhaba.md)
@@ -20,17 +20,17 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Temel veri türleri](ilk-adim/ilkeller.md)
 * [İşleçler](ilk-adim/operatorler.md)
 * [Kontrol akışı](ilk-adim/kontrol-akisi.md)
-## İleri Aşama
+## İkinci Bölüm
 * [Vektörler](ikinci-adim/vectors.md)
 * [Yapılar](ikinci-adim/yapilar.md)
 * [Numaralandırmalar](ikinci-adim/enum.md)
 * [Genel Türler](ikinci-adim/jenerikler.md)
 * [Uygulamalar ve Özellikler](ikinci-adim/impl-and-traits.md)
-## Büyük Bir Adım
+## Üçüncü Bölüm
 * [Sahiplik ve Mülkiyet kavramı](ucuncu-adim/ownership.md)
 * [Borçlanma](ucuncu-adim/borrowing.md)
 * [Yaşam süreleri](ucuncu-adim/lifetimes.md)
-## Başlangıç
+## Dördüncü Bölüm
 * [Kod organizasyonu](dorduncu-adim/code-organization.md)
 * [İslevler](dorduncu-adim/functions.md)
 * [Modüller](dorduncu-adim/modules.md)
@@ -38,7 +38,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Çalışma alanları](dorduncu-adim/workspaces.md)
 * [Use anahtar sözcüğü](dorduncu-adim/use.md)
 * [Std, Temel türler ve Ön yükleme kütüphaneleri](dorduncu-adim/std-primitives-and-preludes.md)
-## Hata Yönetimi
+## Beşinci Bölüm
 * [Akıllı derleyici](besinci-adim/smart-compiler.md)
 * [Panik](besinci-adim/panicking.md)
 * [Option ve Result](besinci-adim/option-and-result.md)

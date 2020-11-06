@@ -4,7 +4,7 @@ Girilen **n** adet parametreyi alıp, bir mantık çerçevesinde sarmalanmış k
 ### İsimlendirilmiş İşlevler
 - İşlevin İngilizce karşılığı **function** kelimesinin kısaltılmış hali olan **`fn`** anahtar sözcüğü ile bildirilirler.
 - **Argüman** ile kullanıldığında bu argümanların veri türleri **parametre listesi**nde bildirilir.
-- İşlevlerin boş bir **[Tuple ()](https://github.com/rust-lang-tr/dokuman/blob/master/rust-programlama-diline-giris/ilk-adim/ilkeller.md#viii-%C3%A7okuzlular)** döndüreceği varsayılır. Bir işlevin sonuç döndürmesi isteniyorsa, dönüş türleri **`->`** işaretinden sonra belirtilir.
+- İşlevlerin boş bir **[Tuple ()](https://github.com/RustDili/Rust-Ogrenmek/blob/master/ilk-adim/ilkeller.md#viii-%C3%A7okuzlular)** döndüreceği varsayılır. Bir işlevin sonuç döndürmesi isteniyorsa, dönüş türleri **`->`** işaretinden sonra belirtilir.
 
 #### i. Merhaba dünya!
 

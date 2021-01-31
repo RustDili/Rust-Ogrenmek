@@ -107,7 +107,7 @@ raw
 
 > 💯 Daha fazla detay için [Rust Standard Kütüphane Belgeleri](https://doc.rust-lang.org/std/)ni inceleyebilirsiniz.
 
-## Ön yükleme kütüphaneleri
+## Prelüdler (Ön yükleme kütüphaneleri)
 Rust'ın `std` kütüphanesi pekçok modül içermesine rağmen her Rust programı bunların tamamını yüklemez. Bunun yerine bir rust programının başlangıçta ihtiyaç duyabileceği genel şeyler yüklenir. Buna **[preludes](https://doc.rust-lang.org/std/prelude/)** yani ön yükleme kütüphanesi adı verilir. Ön yükleme kütüphanesinde varsayılan olarak sadece aşağıdakiler bulunur:
 
 ```rust

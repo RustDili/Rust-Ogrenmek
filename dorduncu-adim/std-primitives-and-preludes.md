@@ -1,4 +1,4 @@
-## Standart kütüphane, temel türler ve ön kütüphaneler
+## Standart kütüphane, temel türler ve prelüdler
 ⭐️ Rust dilinin bileşenleri sadece `std` kütüphane sandığı tarafından değil, derleyici tarafından da uygulanır. Bunlar: 
   
   - **[İlkel türler](https://doc.rust-lang.org/std/#primitives)**: Derleyici tarafından tanımlanan metodlar temel türlere doğrudan `std` kütüphanesi tarafından uygulanır.
@@ -24,7 +24,7 @@ array, tuple
 pointer, fn, reference
 ````
 
-## Standard Makrolar
+## Standard makrolar
 Hem derleyici hem de `std` kütüphanesi tarafından tanımlanan makrolar:
 
 ```Rust
@@ -107,8 +107,8 @@ raw
 
 > 💯 Daha fazla detay için [Rust Standard Kütüphane Belgeleri](https://doc.rust-lang.org/std/)ni inceleyebilirsiniz.
 
-## Prelüdler (Ön yükleme kütüphaneleri)
-Rust'ın `std` kütüphanesi pekçok modül içermesine rağmen her Rust programı bunların tamamını yüklemez. Bunun yerine bir rust programının başlangıçta ihtiyaç duyabileceği genel şeyler yüklenir. Buna **[preludes](https://doc.rust-lang.org/std/prelude/)** yani ön yükleme kütüphanesi adı verilir. Ön yükleme kütüphanesinde varsayılan olarak sadece aşağıdakiler bulunur:
+## Prelüdler
+Rust'ın `std` kütüphanesi pekçok modül içermesine rağmen her Rust programı bunların tamamını yüklemez. Bunun yerine bir rust programının başlangıçta ihtiyaç duyabileceği birkaç genel tür yüklenir. Bir Rust programı başlatıldığında ön yüklemeyle gelen bu türlere **[preludes](https://doc.rust-lang.org/std/prelude/)** prelüdler adı verilir. Varsayılan haliyle bir prelüd içinde aşağıdakiler bulunur:
 
 ```rust
 // Yeniden ihraç edilen çekirdek operatörleri 
@@ -134,12 +134,12 @@ pub use string::{String, ToString};
 pub use vec::Vec;
 ````
 
-> Ön yükleme kütüphaneleri [`libstd/lib.rs`](https://github.com/rust-lang/rust/blob/master/src/libstd/lib.rs#L353) üzerine açıkça aktarılmıştır ve bunların tüm listesi [`libstd/prelude/v1.rs`](https://github.com/rust-lang/rust/blob/master/src/libstd/prelude/v1.rs) üzerinde yer almaktadır.
+> Prelüdler [`libstd/lib.rs`](https://github.com/rust-lang/rust/blob/master/src/libstd/lib.rs#L353) üzerine açıkça aktarılmıştır ve bunların tüm listesi [`libstd/prelude/v1.rs`](https://github.com/rust-lang/rust/blob/master/src/libstd/prelude/v1.rs) üzerinde yer almaktadır.
 
 ⭐️ Yani teknik olarak Rust:
 - `extern crate std;` :  ile **her sandığın sandık kökünü**
 - `use std::prelude::v1::*;` : ile **her modülü** otomatik olarak eklediğinden her defasında bu ön yükleme kütüphanelerinin yeniden ithal edilmesine gerek duyulmaz.
 
-Ön yükleme kütüphanesi yaklaşımı, Rust kütüphanelerinde oldukça yaygın görülür. Örneğin [`std::io`](https://github.com/rust-lang/rust/blob/master/src/libstd/io/prelude.rs) gibi `std` sandığında bulunan bazı modüllerin ve [`Diesel`](https://github.com/diesel-rs/diesel/blob/master/diesel/src/lib.rs#L324) gibi birçok kütüphanenin bile başlangıçta kulandıkları `prelude` modülleri bulunur.
+Rust kütüphanelerinde prelüd yaklaşımı oldukça sık görülür. Örneğin [`std::io`](https://github.com/rust-lang/rust/blob/master/src/libstd/io/prelude.rs) gibi `std` sandığında bulunan bazı modüllerin ve [`Diesel`](https://github.com/diesel-rs/diesel/blob/master/diesel/src/lib.rs#L324) gibi birçok kütüphanenin bile başlangıçta kulandıkları `prelude` modülleri bulunur.
 
-⭐️ Çünkü bu ön yükleme kütüphaneleri, o sandığın kullanımı esnasında gerekli olan tüm önemli bileşenlerin alınabileceği tek bir noktayı temsil ederler ve programcı tarafından özellikle ithal edilmedikçe otomatik olarak yüklenmezler. Her Rust programında otomatik olarak yüklenen ön kütüphane sadece `std::prelude` ön yükleme kütüphanesidir.
+⭐️ Bununla birlikte prelüdler, ilgili sandığın kullanımı esnasında gerekli olan tüm önemli bileşenlerin alınabileceği tek bir noktayı temsil ettiklerinden, programcı tarafından özellikle ithal edilmedikçe koda dahil edilmezler. Tüm Rust programlarında otomatik olarak yüklenen tek prelüd `std::prelude` kütüphanesidir.

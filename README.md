@@ -37,7 +37,7 @@ Bu öğreticinin anlaşılmasını aksatacak düzeyde bilgi, imla hataları, cü
 * [Sandıklar](dorduncu-adim/crates.md)
 * [Çalışma alanları](dorduncu-adim/workspaces.md)
 * [Use anahtar sözcüğü](dorduncu-adim/use.md)
-* [Std, Temel türler ve Ön yükleme kütüphaneleri](dorduncu-adim/std-primitives-and-preludes.md)
+* [Std, Temel türler ve Prelüdler](dorduncu-adim/std-primitives-and-preludes.md)
 ## Beşinci Bölüm
 * [Akıllı derleyici](besinci-adim/smart-compiler.md)
 * [Panik](besinci-adim/panicking.md)

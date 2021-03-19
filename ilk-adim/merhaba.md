@@ -47,7 +47,7 @@ Rust, meta-programlama yapabileceğimiz güçlü bir makro sistemi sağlar. Bir 
 Aşağıdaki örnekte `merhaba_de` adında basit bir makro tanımlanmaktadır.
 
 ```Rust
-  macro_rules! merhaba_de {
+macro_rules! merhaba_de {
    // ‘()’ Boş parantez makronun argüman almadığını gösterir.
   () => {
     // Makro bu bloğun içinde genişler.

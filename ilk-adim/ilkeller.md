@@ -73,7 +73,7 @@ fn main() {
 ````
 
 ### iv. u8, u16, u32, u64, u128
-8, 16, 32, 64, 128 bit sabit boyutlu ve **`(0/+)`** işaretli tam sayı değerlerini tutarlar.
+8, 16, 32, 64, 128 bit sabit boyutlu ve **`(0/+)`** işaretsiz tam sayı değerlerini tutarlar.
 
 | VERİ TÜRÜ | MIN | MAX                                     |
 | --------- | --- | --------------------------------------- |

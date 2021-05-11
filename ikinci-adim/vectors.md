@@ -121,7 +121,7 @@ println!("Bu öğe var mı?: {:?}", bu_oge_yok);         // None
 ````
 
 ### .push() işlevi
-Bir vektöre yeni öğe eklemek için `.pop()` işlevinden yararlanılır. Öğeler bu işlev kullanıldığında vektörün sonuna eklenirler.
+Bir vektöre yeni öğe eklemek için `.push()` işlevinden yararlanılır. Öğeler bu işlev kullanıldığında vektörün sonuna eklenirler.
 
 ```Rust
 fn main () {

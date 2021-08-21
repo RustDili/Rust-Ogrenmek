@@ -21,8 +21,10 @@ impl Oyuncu {
 }
 
 fn main() {
-    let bas_rol = Oyuncu {ilk_adi: String::from("Reha"),
-                            son_adi: "Özcan".to_string() };
+    let bas_rol = Oyuncu {
+                            ilk_adi: String::from("Reha"),
+                            son_adi: "Özcan".to_string(), 
+                          };
     
     println!("Baş rol oyuncusu: {}", bas_rol.tam_adi());
     // Baş rol oyuncusu: Reha Özcan

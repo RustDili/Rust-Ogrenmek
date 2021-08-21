@@ -31,7 +31,7 @@ fn main() {
 }
 ````
 
-⭐️ Her uygulamanın kendi türü ile aynı sandığın içinde yer almasına dikkat edin.
+⭐️ Her uygulamanın ait olduğu türle aynı sandıkta bulunmasına dikkat edin.
 
 ## Varsayılan metodu bulunmayan uygulama ve özellikler
 ```Rust

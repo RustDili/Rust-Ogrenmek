@@ -51,8 +51,10 @@ impl TamAdi for Oyuncu {
 }
 
 fn main() {
-    let yan_rol = Oyuncu {ilk_adi: String::from("Selin"),
-                            son_adi: "Tekman".to_string() };
+    let yan_rol = Oyuncu {
+                            ilk_adi: String::from("Selin"),
+                            son_adi: "Tekman".to_string() 
+                         };
     
     println!("Yan rol oyuncusu: {}", yan_rol.tam_adi());
     // Yan rol oyuncusu: Selin Tekman

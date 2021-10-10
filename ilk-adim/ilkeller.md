@@ -267,8 +267,8 @@ fn main() {
 
 ```Rust
 fn main() {
-    // Bu tanım `let a: i18 = 5;` ifadesine eşittir
-    let a = 5i18;
+    // Bu tanım `let a: i16 = 5;` ifadesine eşittir
+    let a = 5i16;
     
     // Bu tanım `let b: i32 = 100000000;` ifadesine eşittir
     let b = 100_000_000; 

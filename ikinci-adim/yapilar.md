@@ -39,6 +39,7 @@ fn main() {
 }
 // 7.05, Merhaba!, false
 ````
+[Oyun alanında dene](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=31d00191a39d1a3960830f567196736d)
 
 C tipi olarak da adlandırılabilen bu yapıların içinde tanımlanan her alanın bir adı ve türü vardır. Bu alanlara `yapi_ornegi.alan_adi` söz dizimi kullanılarak erişilir. Tanımları tür için genel bir şablon gibi olduğundan elemanlarını belirtirken herhangi bir sıraya uyulmasına gerek yoktur: 
 

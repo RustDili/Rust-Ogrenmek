@@ -128,7 +128,7 @@ trait From<T> {
 ````
 
 ## Özellikler ve Kalıtım
-Özelliklerin şablonik yapıları diğer özellikler tarafından da miras alınarak kullanılabilir. 
+Özelliklerin şablonik yapıları diğer özellikler tarafından miras alınarak kullanılabilir. 
 
 ```Rust
 trait Isci {

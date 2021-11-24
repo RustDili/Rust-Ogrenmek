@@ -51,17 +51,17 @@ impl TamAdi for Oyuncu {
 }
 
 fn main() {
-    let yan_rol = Oyuncu {
+    let yardimci = Oyuncu {
                             ilk_adi: String::from("Selin"),
                             son_adi: "Tekman".to_string() 
                          };
     
-    println!("Yan rol oyuncusu: {}", yan_rol.tam_adi());
-    // Yan rol oyuncusu: Selin Tekman
+    println!("Yardımcı oyuncu: {}", yardimci.tam_adi());
+    // Yardımcı oyuncu: Selin Tekman
 }
 ````
 
-🔎 Özellikler, işlevler dışında diğer türler hatta sabitleri de içerebilir.
+🔎 Özellikler, işlevler dışında sabitler dahil, diğer türleri de içerebilir.
 
 ## Varsayılan metoda sahip uygulama ve özellikler
 ```Rust
@@ -74,12 +74,12 @@ trait Foo {
 ````
 
 ⭐️ Yukarıdaki örnekten de anlaşılacağı gibi metotlar özel bir ilk parametre olan `self` yani türün kendisine sahiptirler. Bu parametre duruma göre `self`, `&self` ya da `&mut self` şeklinde olabilir. 
-- Değer belleğin stack bölümünde depolanıyorsa `self` ile **değişkenin mülkiyeti** dahil kendisi, 
-- Değer heap üzerinde depolanan değişmez bir referans ise `&self` ile yapılan **değişmez bir başvuru**,
-- Değer heap üzerinde depolanan değişebilir bir referans türündeyse `&mut self` ile yapılan **değişebilir bir başvuru** temsil edilir.
+- Değer belleğin stack bölümünde depolanıyorsa: `self` ile **değişkenin mülkiyeti** dahil kendisi, 
+- Değer heap üzerinde depolanan değişmez bir referans ise: `&self` ile yapılan **değişmez bir başvuru**,
+- Değer heap üzerinde depolanan değişebilir bir referans türündeyse: `&mut self` ile yapılan **değişebilir bir başvuru** temsil edilir.
 
 ## İlişkili işlevlere sahip uygulamalar
-Birçok programlama dili statik işlevleri destekler. Bunlar kullanılabildiğinde bir nesne oluşturulmaksızın doğrudan sınıf içinden çağrılabilirler. Rust'ta bu şekilde kullanılan işlevlere **ilişkili İşlevler** denir. Bu statik işlevler bir yapı içinden çağrılırken `Kisi::new(“Ali Veli”);` söz ifadesinde olduğu gibi `::işlev()` şeklindeki söz dizimi uygulanır:
+Birçok programlama dili statik işlevleri destekler. Bu işlevler doğrudan ve herhangi bir nesne oluşturulmaksızın sınıf içinden çağrılabilirler. Rust'ta bu şekilde kullanılan işlevlere **ilişkili İşlevler** denir. Bu işlevler `Kisi::new(“Ali Veli”);` örneğindeki gibi `::işlev()` şeklindeki söz dizimiyle çağırılır:
 
 ```Rust
 struct Oyuncu {

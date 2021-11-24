@@ -19,7 +19,7 @@ Birbiriyle ilgili özellikleri bileşik veri tipi halinde bir araya getiren, kul
 >💡 Daha karmaşık örneklere, [Uygulamalar ve Özellikler](ikinci-adim/impl-and-traits.md), [Yaşam süreleri](#) ve [Modüller](#) bölümlerinden ulaşabilirsiniz.
 
 ## C benzeri kurallı yapılar
-En yaygın kullanılan yapı türlerindendir. Parantez içine alınmış listelere, araları virgülle ayrılmış bir veya daha fazla `isim:deger` çiftlerine sahiptirler. Metodları bulunmayan sınıflara benzerler, veri alanları isimlendirilmiş olduğundan üyelerine `nesne.isim` şeklinde erişilebilirler: 
+En yaygın kullanılan yapı türlerindendir. Parantez içine alınmış listelere, araları virgülle ayrılmış bir veya daha fazla `isim:deger` çiftlerine sahiptirler. Metodları bulunmayan sınıflara benzerler, veri alanları isimlendirilmiş olduğundan üyelerine `nesne.isim` şeklinde erişilebilir: 
 
 ```Rust
 struct Yapi {

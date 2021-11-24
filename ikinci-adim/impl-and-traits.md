@@ -155,19 +155,19 @@ trait SesUret {
     fn ses_al(&self) -> String;
 }
 
-struct Cat {
+struct Kedi {
     ses: String,
 }
-    impl SesUret for Cat {
+    impl SesUret for Kedi {
         fn ses_al(&self) -> String {
             self.ses.clone()
         }
     }
 
-struct Bell {
+struct Zil {
     ses: String,
 }
-    impl SesUret for Bell {
+    impl SesUret for Zil {
         fn ses_al(&self) -> String {
             self.ses.clone()
         }
@@ -178,8 +178,8 @@ fn ses_ver<T: SesUret>(t: &T) {
 }
 
 fn main() {
-    let kedi_sesi = Cat { ses: "Miyawww".to_string() }; 
-    let kapi_sesi = Bell{ ses: "Ding Dong". to_string() };
+    let kedi_sesi = Kedi { ses: "Miyawww".to_string() }; 
+    let kapi_sesi = Zil{ ses: "Ding Dong". to_string() };
     
     ses_ver(&kedi_sesi);    // Miyawww
     ses_ver(&kapi_sesi);    // Ding Dong

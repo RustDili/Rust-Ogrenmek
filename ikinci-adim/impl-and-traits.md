@@ -146,7 +146,7 @@ trait Isci {
 ````
 
 ## Özellik nesneleri
-🔎 Rust statik dağıtımı desteklediği gibi, **özellik nesneleri** adı verilen bir mekanizma aracılığıyla dinamik dağıtımı da destekler. 
+🔎 Statik dağıtımın yanı sıra, **özellik nesneleri** adı verilen bir mekanizma aracılığıyla dinamik dağıtım da desteklenir. 
 
 >🅆  [Dinamik dağıtım](https://en.wikipedia.org/wiki/Dynamic_dispatch) çalışma zamanında hangi polimorfik işlemin *(metod veya işlev)* uygulanacağını seçme işlemidir.
 

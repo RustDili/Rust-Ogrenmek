@@ -185,4 +185,4 @@ fn main() {
     ses_ver(&kapi_sesi);    // Ding Dong
 }
 ````
-[Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=0a58ce86e21a284c4b0cacd452c241e5)
+[Kodu deneyin](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=0a58ce86e21a284c4b0cacd452c241e5)

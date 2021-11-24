@@ -113,7 +113,7 @@ fn main() {
 🔎 Aynı örnekte bulunan, `yeni()` ve `tam_adi()` metodlarını iki ifade olarak ayrı ayrı kullanmak yerine,  `nesne_ornegi.nokta_ekle(2).nokta_sayisi_bul();` gibi metod zinciri şeklinde ifade edebiliriz.
 
 ## Özellik ve genelleme
-Genellenecek özelliğin adı `From<T>` söz dizimine uygun şekilde, işlev genellemelerind eolduğu gibi belirteçten önce yazılır:
+Genellenecek özelliğin adı `From<T>` söz dizimine uygun şekilde, işlev genellemelerinde olduğu gibi belirteçten önce yazılır:
 
 ```Rust
 trait From<T> {

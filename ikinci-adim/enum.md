@@ -14,7 +14,7 @@ enum Gunler {
 }
 ````
 
-Örneğimizdeki `Gunler` bir `enum`dur ve süslü parantezler içinde yer alan Pazartesi, Sali, Carsamba, Persembe, Cuma, Cumartesi, Pazar günleri ise **bu enum’un varyantlarıdır.**
+Örneğimizdeki `Gunler` bir `enum`dur ve süslü parantezler içinde yer alan Pazartesi, Sali, Carsamba, Persembe, Cuma, Cumartesi, Pazar günleri ise bu enum’un **varyantları**dır.
 
 ⭐️ Bir `enum`’un sahip olduğu varyantlara **`::`** gösterimi, yani `Gunler::Pazartesi` şeklindeki söz dizimiyle erişilir:  
 

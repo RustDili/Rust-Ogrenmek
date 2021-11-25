@@ -47,8 +47,8 @@ println!("x:{}, y:{}, z:{}", x, y, z); // x:2, y:10, z:20
 ````
 ### Sabitler
 
-Sabitleri tanımlamak için `const` anahtar sözcüğü kullanılır. Değişkenlerin aksine sabitler tür açıklaması yapılarak bildirilir. 
-Programın ömrü boyunca yaşayan bu değişken türleri derleme sırasında değerleriyle değiştirildiğinden bellekte kalıcı adresleri bulunmaz. Bu nedenle aynı sabite yapılan farklı başvuruların aynı hafıza adresine erişeceği garanti edilmez.
+Sabitleri tanımlamak için `const` anahtar sözcüğü kullanılır. Değişkenlerin aksine sabitler tanımlanırken türlerinin açıkça bildirilmesi gerekir. 
+Program çalıştığı sürece yaşayan ve derleme esnasında değerleriyle yer değiştiren bu türlerin bellekte kalıcı adresleri bulunmadığından, kendilerine yapılan  başvuruların aynı hafıza adresine erişeceği garanti edilmez.
 
 ```Rust
 fn main() {
@@ -56,11 +56,11 @@ fn main() {
   println!("S sabitinin değeri: {}," S);
 }
 ````
-Sabitler sadece varsayılan olarak değil her zaman değişmez olduklarından, sabit bildirimlerinde `mut` anahtar kelimesi kullanılamaz.
+Sabitler varsayılan olarak değil daima değişmez olduklarından, sabit bildirimlerinde `mut` anahtar kelimesi kullanılamaz.
 
 ### Statikler
 
-Bir küresel değişken türü tanımımlanırken `static` anahtar sözcüğü kullanılır. Bu türler sabitlere benzemekle birlikte sabit bir adresleri bulunur. Bu türlerin her değeri için sadece bir örnek olabilir ve bu örnekler kullanılırken satır içlerine alınmazlar.
+Bir küresel değişken türü tanımımlanırken `static` anahtar sözcüğü kullanılır. Bu türler sabitlere benzemekle birlikte, bellekte üzerinde bir adresleri bulunur. Bu türlerin her değeri için sadece bir örnek olabilir ve bu örnekler kullanılırken satır içlerine alınmazlar.
 
 ```Rust
 fn main() {
@@ -68,7 +68,7 @@ fn main() {
   println!("S global değeri: {}," S);
 }
 ````
-Statik öğeler genellikle kod dosyasının en üstünde işlevlerin dışında bulundurulurlar. Sabit bir türün hafıza adresine nadiren başvurulduğundan, zorunlu olmadıkça statik tür yerine sabit öğelerin kullanılması yeğlenir. Bu tercih programın optimizasyonu için de önemlidir.
+Statik öğeler genellikle kod dosyasının en üstünde işlevlerin dışında bulundurulurlar. Sabit türünün hafıza adresine nadiren başvurulduğundan, kodun eniyileştirilmesi için zorunlu olmadıkça statik tür yerine sabitlerin kullanılması yeğlenmelidir.
 ```Rust
 static NAME: &'static str = "Apache";
 print!("{}", NAME);

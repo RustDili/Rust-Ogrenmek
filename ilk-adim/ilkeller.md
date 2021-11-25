@@ -163,7 +163,7 @@ println!("ys dizisi belleğin stack bölgesinde: {} byte yer kaplıyor.", mem::s
 > 🔎 Eğer eleman adetlerinin otomatik olarak arttırılabildiği bir dizi türü gerekiyorsa bunun için [**Vektörler**](https://github.com/rust-lang-tr/dokuman/blob/master/rust-programlama-diline-giris/ikinci-adim/vectors.md) tercih edilmelidir. Vektörler türleri aynı olmak kaydıyla istenilen sayıda elemanı kabul ederler.
 
 ### viii. Çokuzlular
-Aynı ya da farklı veri türlerinden oluşan elemanların sabit büyüklükteki listelerini oluşturmak için kullanılan değer topluluklarıdırlar. Her elemanı `(T1, T2, T3...Tn)` kendi türünün imzalı değeri olduğundan, çok sayıda elemanla veya farklı türlerden oluşan koleksiyonlarla çalışırlırken oldukça faydalıdırlar.
+Aynı ya da farklı veri türlerinden oluşan elemanların sabit büyüklükteki listelerini oluşturmak için kullanılan değer topluluklarıdırlar. Her elemanı `(T1, T2, T3...Tn)` kendi türünün imzalı değeri olduğundan, çok sayıda eleman veya farklı türlerden oluşan koleksiyonlarla çalışırken kullanılırlar.
 
 ```Rust
 fn main() {

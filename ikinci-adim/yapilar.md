@@ -131,7 +131,7 @@ Yapı örnekleri `let` ile bağlanarak destructure edelebilirler. Bu yapıldığ
     // Mavi = (0, 0, 255)
 ````
 
-İşlevler üzerinden yapı alanlarına erişilerek bir örneği elde edilebilir:
+Yapının alanlarına işlevler üzerinden erişip yeni bir örnek elde edebilirsiniz:
 
 ```Rust
 struct Renk {

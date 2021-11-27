@@ -274,7 +274,7 @@ fn main() {
     let b = 100_000_000; 
 }
 ````
-- Dizge olarak Türkçeleştirdiğimiz [`String`](https://doc.rust-lang.org/std/string/struct.String.html), kendisine belleğin heap adlı bölgesinde yer ayrılan bir türdür. Bu nedenle dizgelerin boyutları genişlemeye müsait olup UTF-8 standartlarında oldukları garanti edilir. Genellikle bir dizgenin mülkiyetine ihtiyaç duyulduğunda dizgenin kendisi, bir dizgiyi ödünç almak gerektiğinde ise `&str` ile dizgenin referansı kullanılır.
+- Dizgi olarak Türkçeleştirdiğimiz [`String`](https://doc.rust-lang.org/std/string/struct.String.html), belleğin heap (öbek) adlı bölgesinde depolanan bir türdür. Boyutları genişlemeye uygun olan bu türün UTF-8 standartlarında olduğu garanti edilir. Bir dizginin mülkiyetini almak gerektiğinde dizginin kendisini, ödünç almak gerektiğindeyse `&str` ile dizgi dilimine başvururuz.
 
 - Bir [String](https://doc.rust-lang.org/std/string/struct.String.html) türü, `&str` türünden, [`to_string()`](https://doc.rust-lang.org/std/string/trait.ToString.html) veya [`String::from()`](https://doc.rust-lang.org/std/string/struct.String.html#method.from) metodları kullanılarak oluşturulabilir. Benzer şekilde bir `String` türü de [`as_str()`](https://doc.rust-lang.org/std/string/struct.String.html#method.as_str) metodu yardımıyla, `&str` türüne dönüştürülebilir.
 
@@ -290,3 +290,4 @@ fn main() {
 }
 // d:Merhaba, s:Merhaba, dd:Merhaba, e:Merhaba
 ````
+[Oyun alanında dene](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=665fa5d1deb37299c0853dc37f9402ef)

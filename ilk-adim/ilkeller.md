@@ -284,7 +284,7 @@ fn main() {
     let s = d.to_string();      // şimdi String
     
     let dd = s.as_str();        // &str
-    let e = String::from(dd);    // yine String
+    let e = String::from(dd);   // yine String
     
     println!("d:{}, s:{}, dd:{}, e:{}", d, s, dd, e);
 }

@@ -235,14 +235,14 @@ fn main() {
     let dil: [i32; 5] = [1, 2, 3, 4, 5];
     dilimle(&dil);
     
-    let dilim: &[i32] = &dizi[0..4];
+    let dilim: &[i32] = &dil[0..4];
     dilimle(&dilim);
     
     dilimle(&dil[1..3]);
 }
-// İlk elemanı 0 olan 5 elemanlı dilim
-// İlk elemanı 0 olan 4 elemanlı dilim
-// İlk elemanı 1 olan 3 elemanlı dilim
+// İlk elemanı 1 olan 5 elemanlı dilim
+// İlk elemanı 1 olan 4 elemanlı dilim
+// İlk elemanı 2 olan 2 elemanlı dilim
 ````
 
 ### x. Str

@@ -10,7 +10,7 @@ Yorum satırları programların olmazsa olmazlarıdır. Rust birkaç farklı yor
 
 💡 Her ne kadar blok yorumlarını destekleniyorsa da, geleneksel olarak satır içi yorum kullanılması tercih edilmektedir.
 
-## Belgelendirilen Yorum Satırları
+## Belgelendiren Yorum Satırları
 ```Rust
 /// Satır içi yorumlar: Bir alttaki öğeyi belgeler
 /** Blok Yorumu: Bir alttaki öğeyi belgeler */

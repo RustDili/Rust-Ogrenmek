@@ -108,7 +108,7 @@ Yapılar varsayılan olarak değişmez kabul edilirler. Bir yapıyı değişken 
     println!("Örnek = ({}, {}, {})", ornek.kirmizi, ornek.yesil, ornek.mavi);
     // Örnek = (0, 0, 238)
     
-    // destructure edilirken takma isimlerde mutable olarak işaretlenmelidir 
+    // destructure edilirken takma isimler de mutable olarak işaretlenmelidir 
     let Renk {kirmizi: mut k, yesil: mut y, mavi: mut m} = ornek;
     m = 200;
     println!("Örnek = ({}, {}, {})", k, y, m);

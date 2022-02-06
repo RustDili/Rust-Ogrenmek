@@ -69,7 +69,7 @@ fn main() {
 ````
 
 #### i. Giriş ve dönüş türleri bildirilerek 
-Aynı örneği isimsiz işlev olarak tasarlanamak çok daha pratiktir. Bu tasarımda işlevin giriş ve çıkış türlerini isteğe bağlı olarak bildirilir:
+Aynı örneği isimsiz işlev olarak tasarlamak çok daha pratiktir. Bu tasarımda işlevin giriş ve çıkış türleri isteğe bağlı olarak bildirilir:
 
 ```Rust
 fn main() {

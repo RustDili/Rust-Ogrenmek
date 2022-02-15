@@ -60,7 +60,7 @@ Sabitler varsayılan olarak değil daima değişmez olduklarından, sabit bildir
 
 ### Statikler
 
-Bir küresel değişken türü tanımımlanırken `static` anahtar sözcüğü kullanılır. Bu türler sabitlere benzemekle birlikte, bellekte üzerinde bir adresleri bulunur. Bu türlerin her değeri için sadece bir örnek olabilir ve bu örnekler kullanılırken satır içlerine alınmazlar.
+Bu küresel değişken türü tanımımlanırken `static` anahtar sözcüğü kullanılır. Bu türler sabitlere benzemekle birlikte, bellekte üzerinde bir adresleri bulunur. Bu türlerin her değeri için sadece bir örnek olabilir ve bu örnekler kullanılırken satır içlerine alınmazlar.
 
 ```Rust
 fn main() {

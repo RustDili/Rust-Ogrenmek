@@ -22,7 +22,7 @@ fn main() {
   println!("z: {}", z);
   
   z = 6;
-  println!("Şimdiki z: {}", b);
+  println!("Şimdiki z: {}", z);
   
   let (mut e, mut f) = (-12, 20.1);
   println!("e: {}, f: {}", e, f);
@@ -53,7 +53,7 @@ Program çalıştığı sürece yaşayan ve derleme esnasında değerleriyle yer
 ```Rust
 fn main() {
   const S: i32 = 5;
-  println!("S sabitinin değeri: {}," S);
+  println!("S sabitinin değeri: {}", S);
 }
 ````
 Sabitler varsayılan olarak değil daima değişmez olduklarından, sabit bildirimlerinde `mut` anahtar kelimesi kullanılamaz.

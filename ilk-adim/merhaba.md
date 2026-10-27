@@ -51,13 +51,13 @@ macro_rules! merhaba_de {
    // ‘()’ Boş parantez makronun argüman almadığını gösterir.
   () => {
     // Makro bu bloğun içinde genişler.
-    println!(“Merhaba!”);
+    println!(“Merhaba!”)
   };
 }
 
 fn main() {
   // Alttaki çağrı println!(“Merhaba!”); ifadesini çalıştırır. 
-  merhaba_de!()
+  merhaba_de!();
 }
 ````
 **macro'ların kullanılması:**
